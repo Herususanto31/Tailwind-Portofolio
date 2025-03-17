@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script> <!-- Panggil JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portofolio</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header-->
+    <header class="bg-gray-900 sticky  top-0">
+      <nav class="text-white w-11/12 md:container mx-auto py-4 flex justify-between items-center">
+        <a href="" class="text-3xl font-bold px-6">Portofolio</a>
+        <ul class="menu hidden md:flex md:bg-gray-900 md:relative md:top-0 md:divide-y-0 md:w-auto">
+          <li class="px-7 py-1 hover:text-gray-500"><a href="#about">About</a></li>
+          <li class="px-7 py-1 hover:text-gray-500"><a href="#portofolio">Portofolio</a></li>
+          <li class="px-7 py-1 hover:text-gray-500"><a href="#sertifikat">Sertifikat</a></li>
+          <li class="px-7 py-1 hover:text-gray-500 md:hover:text-white"><a href="" class="md:border-2 md:border-blue-400 md:py-2 md:px-5 md:rounded-xl md:hover:bg-blue-300 text-white">Beranda</a></li>
+        </ul>
+        <button class="hamburger-menu text-2xl md:hidden">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark hidden"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <section class="bg-gray-900">
+      <div class="container mx-auto text-center text-white h-screen flex items-center">
+        <div class="mx-auto w-3/4 md:w-2/4">
+          <h3 class="text-6xl font-bold text-center mb-6">Hey, I'm <br> Heru Susanto</h3>
+          <p class="text-white mb-5">Mahasiswa Teknologi Rekayasa Perangkat Lunak dengan minat di UI/UX, Front-End Development, dan desain grafis, serta fokus pada menciptakan antarmuka yang intuitif dan pengalaman pengguna yang optimal.</p>
+            <a href="dokument/CV HERU SUSANTO.pdf" download class="mt-6 inline-block bg-blue-800 text-white px-6 py-2 rounded-md hover:opacity-80">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- about -->
+    <section id="about" class="w-11/12 md:container mx-auto px-6 py-20">
+      <div class="flex space-x-10 items-start">
+        <img src="img/IMG_9922.JPG" class="w-30 h-80">
+        <div>
+          <h3 class="text-5xl font-bold mb-5">Tentang Saya</h3>
+          <p class="mb-5">Saya adalah Mahasiswa aktif Politeknik Negeri Banyuwangi, Semester 6, 
+            Jurusan Bisnis dan Informatika, Program Studi Teknologi Rekayasa Perangkat Lunak.
+            Saya memiliki keahlian dalam UI/UX Design, Desain Grafis, dan Front-End Development. 
+            Dengan latar belakang ini, saya terbiasa merancang antarmuka yang intuitif, 
+            mengembangkan tampilan web yang responsif, serta memastikan pengalaman pengguna yang optimal. 
+            Saya juga memiliki ketertarikan dalam eksplorasi tren desain terbaru dan teknologi web untuk menciptakan solusi digital yang inovatif.</p>
+          <ul class="md:flex md:space-x-5">
+    </section>
+
+    <section>
+    <!-- services -->
+    <section id="portofolio" class="bg-gray-200 py-20">
+      <div class="w-11/12 md:container mx-auto px-6">
+        <h3 class="text-5xl font-bold text-center mb-5">Portofolio</h3>
+        <p class="text-gray-500 text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, odit.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- service 1-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="https://placehold.co/100" />
+            <div>
+              <h4 class="text-2xl font-bold mb-5">Data Analytics</h4>
+              <p class="text-gray-500 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam perspiciatis quis! Atque, explicabo voluptates?</p>
+              <a href="" class="hover:text-gray-500">read more</a>
+            </div>
+          </div>
+
+          <!-- service 2-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="https://placehold.co/100" />
+            <div>
+              <h4 class="text-2xl font-bold mb-5">Social Media Assistant</h4>
+              <p class="text-gray-500 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam perspiciatis quis! Atque, explicabo voluptates?</p>
+              <a href="" class="hover:text-gray-500">read more</a>
+            </div>
+          </div>
+
+          <!-- service 3-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="https://placehold.co/100" />
+            <div>
+              <h4 class="text-2xl font-bold mb-5">Developer & Maintenance</h4>
+              <p class="text-gray-500 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam perspiciatis quis! Atque, explicabo voluptates?</p>
+              <a href="" class="hover:text-gray-500">read more</a>
+            </div>
+          </div>
+
+          <!-- service 4-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <img src="https://placehold.co/100" />
+            <div>
+              <h4 class="text-2xl font-bold mb-5">24/7 Protection</h4>
+              <p class="text-gray-500 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam perspiciatis quis! Atque, explicabo voluptates?</p>
+              <a href="" class="hover:text-gray-500">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERTIFIKAT -->
+    <section id="sertifikat" class="py-20 px-6 bg-white">
+      <h3 class="text-5xl font-bold text-center mb-4">Sertifikat</h3>
+      <p class="text-gray-500 mb-5 text-center">Sertifikat yang saya peroleh dari tahun 2021 hingga 2024</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 w-11/12 md:container mx-auto gap-6">
+        <!-- SERTIFIKAT 1-->
+        <div class="shadow-xl">
+          <a href="#" onclick="openModal('./img/Sertifikat Jaran Goyang_page-0017.jpg')">
+            <img src="./img/Sertifikat Jaran Goyang_page-0017.jpg" class="w-full cursor-pointer" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT HUMAS EKSTERNAL</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada saya atas peran saya sebagai Humas Eksternal dalam perlombaan tari Jaran Goyang Aji Kembang yang diselenggarakan oleh UKM GENIWANGI, Politeknik Negeri Banyuwangi, pada 10 Agustus 2023.</p>
+            </div>
+          </a>
+        </div>
+        <!-- SERTIFIKAT 2-->
+        <div class="shadow-xl">
+          <a href="#" onclick="openModal('./img/4.png')">
+            <img src="./img/4.png" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT PENGHARGAAN</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Peserta pada acara Webinar Animasi, Politeknik Negeri Banyuwangi 3 Juni 2023.</p>
+            </div>
+          </a>
+        </div>
+        <!-- SERTIFIKAT 3-->
+        <div class="shadow-xl">
+          <a href="" onclick="openModal('./img/Sertifikat Juara 3 lomba desain_1.jpg')">
+            <img src="./img/Sertifikat Juara 3 lomba desain_1.jpg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT LOMBA DESAIN LOGO</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Juara 3 dalam lomba desain logo diesnatalis ke-8 Forbimwangi, Politeknik Negeri Banyuwangi 10 april 2023.</p>
+            </div>
+          </a>
+        </div>
+        <!-- SERTIFIKAT 4-->
+        <div class="shadow-xl">
+          <a href="#" onclick="openModal('./img/Sertifikat Juara 3 lomba desain_2.jpg')">
+            <img src="./img/Sertifikat Juara 3 lomba desain_2.jpg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT LOMBA DESAIN LOGO</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Juara 2 dalam lomba desain logo diesnatalis ke-9 Forbimwangi, Politeknik Negeri Banyuwangi 30 Maret 2023.</p>
+            </div>
+          </a>
+        </div>
+        <!-- SERTIFIKAT 5-->
+        <div class="shadow-xl">
+          <a href="#" onclick="openModal('./img/Sertifikat Direkturcup_page-0003.jpg')">
+            <img src="./img/Sertifikat Direkturcup_page-0003.jpg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT PENGHARGAAN</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Kordinator Lomba Fotografi dalam acara DIREKTUR CUP 2023, Politeknik Negeri Banyuwangi 10 april 2023.</p>
+            </div>
+          </a>
+        </div>
+        <!-- SERTIFIKAT 6-->
+        <div class="shadow-xl">
+          <a href="#" onclick="openModal('./img/Sertif Festival Barong.jpg')">
+            <img src="./img/Sertif Festival Barong.jpg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT APRESIASI</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai panitia banyuwangi Festival yaitu Grand Festival Barong 2024, Banyuwangi 22 September 2024</p>
+            </div>
+          </a>
+        </div>
+        <!-- SERTIFIKAT 7-->
+        <div class="shadow-xl">
+          <a href="#" onclick="openModal('./img/KONTEN KREATOR.jpeg')">
+            <img src="./img/KONTEN KREATOR.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT LOMBA KONTEN KREATOR</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai juara 2 lomba konten kreator yang di selenggaran oleh TPHT politeknik Negeri Banyuwangi pada 24 November 2021.</p>
+            </div>
+          </a>
+        </div>
+        <!-- SERTIFIKAT 8-->
+        <div class="shadow-xl">
+          <a href="#" onclick="openModal('./img/Sertif Kordinator Kominfo.jpg')">
+            <img src="./img/Sertif Kordinator Kominfo.jpg" class="w-full sertifikat-img cursor-pointer rounded-lg shadow-md" />
+            <div class="py-3 px-5">
+              <h4 class="text-center mb-2 font-bold">SERTIFIKAT KOOR KOMINFO</h4>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai koordinator Kominfo UKM GENIWANGI Periode 2023/2024.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex justify-center items-center z-50">
+      <div class="relative bg-white p-4 rounded-lg shadow-lg max-w-3xl w-full">
+        <button onclick="closeModal()" class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full">&times;</button>
+        <img id="modal-img" src="" class="w-full h-auto rounded-lg" />
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      function openModal(imgSrc) {
+        document.getElementById("modal-img").src = imgSrc;
+        document.getElementById("modal").classList.remove("hidden");
+      }
+
+      function closeModal() {
+        document.getElementById("modal").classList.add("hidden");
+      }
+    </script>
+    
+    <footer class="py-5 bg-gray-900 text-white">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+        <p class="text-center md:text-left">&copy; 2025 Tailsimple. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="https://www.tiktok.com/@herususanto_31?_t=ZS-8ukQ32hDtlE&_r=1" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+            <i class="fa-brands fa-tiktok text-xl"></i>
+          </a>
+          <a href= "https://www.instagram.com/heru.ssnto" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/heru-susanto-67744b2a5/" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+            <i class="fa-brands fa-linkedin text-xl"></i>
+          </a>
+          <a href="https://github.com/Herususanto31" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+            <i class="fa-brands fa-github text-xl"></i>
+          </a>
+          <a href="https://youtube.com/@herususanto0318?si=s0Os12fmPMCQNTre" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+            <i class="fa-brands fa-youtube text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+        
+
+    <script src="script.js"></script>
+  </body>
+</html>
