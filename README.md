@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Deskripsi
-=======
-# Deskripsi 
->>>>>>> 40a4e1f (Update tampilan)
+(Update tampilan)
 Website dengan tampilan sederhana dengan menggunakan:
 - HTML
 - Tailwindcss

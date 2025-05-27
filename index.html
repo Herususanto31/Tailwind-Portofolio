@@ -1,235 +1,289 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer"
-    />
-    
-    <title>Portofolio</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Portofolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
-    <!-- Header -->
+<!-- Header -->
 <header class="bg-gray-900 sticky top-0 w-full z-50">
   <nav class="w-11/12 md:container mx-auto py-4 flex justify-between items-center text-white">
-      <!-- Logo -->
-      <a href="#" class="text-3xl font-bold px-6">Portofolio</a>
+    <!-- Logo -->
+    <a href="#" class="text-3xl font-bold px-6">Portofolio</a>
 
-      <!-- Menu Navigasi -->
-      <ul class="menu hidden absolute top-16 left-0 w-full bg-gray-900 md:flex md:static md:w-auto md:bg-transparent md:flex-row z-50">
-          <li class="px-7 py-3 hover:text-gray-500">
-              <a href="#about">About</a>
-          </li>
-          <li class="px-7 py-3 hover:text-gray-500">
-              <a href="#portofolio">Portofolio</a>
-          </li>
-          <li class="px-7 py-3 hover:text-gray-500">
-              <a href="#sertifikat">Sertifikat</a>
-          </li>
-          <li class="px-7 py-3 md:hover:text-white">
-              <a href="#" class="md:border-2 md:border-blue-400 md:py-2 md:px-5 md:rounded-xl md:hover:bg-blue-300 text-white">
-                  Beranda
-              </a>
-          </li>
-      </ul>
+    <!-- Menu Navigasi -->
+    <ul
+      class="menu hidden absolute top-16 left-0 w-full bg-gray-900 md:flex md:static md:w-auto md:bg-transparent md:flex-row z-50">
+      <li class="px-7 py-3 hover:text-gray-500">
+        <a href="#about">About</a>
+      </li>
+      <li class="px-7 py-3 hover:text-gray-500">
+        <a href="#portofolio">Portofolio</a>
+      </li>
+      <li class="px-7 py-3 hover:text-gray-500">
+        <a href="#sertifikat">Sertifikat</a>
+      </li>
+      <li class="px-7 py-3 md:hover:text-white">
+        <a href="#"
+          class="md:border-2 md:border-blue-400 md:py-2 md:px-5 md:rounded-xl md:hover:bg-blue-300 text-white">
+          Beranda
+        </a>
+      </li>
+    </ul>
 
     <!-- Tombol Menu Mobile -->
-        <button class="hamburger-menu text-2xl md:hidden">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark hidden"></i>
-        </button>
-    </header>
+    <button class="hamburger-menu text-2xl md:hidden">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark hidden"></i>
+    </button>
+</header>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menu = document.querySelector(".menu");
-            const btn = document.querySelector(".hamburger-menu");
-            const barsIcon = btn.querySelector(".fa-bars");
-            const closeIcon = btn.querySelector(".fa-xmark");
-            
-            btn.addEventListener("click", function () {
-                menu.classList.toggle("hidden");
-                barsIcon.classList.toggle("hidden");
-                closeIcon.classList.toggle("hidden");
-            });
-        });
-    </script>
-</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () { // Menunggu seluruh isi halaman dimuat
 
-    <!-- hero -->
-    <section class="bg-gray-900">
-      <div class="container mx-auto text-center text-white h-screen flex items-center">
-        <div class="mx-auto w-3/4 md:w-2/4">
-          <h3 class="text-6xl font-bold text-center mb-6">Hey, I'm <br> Heru Susanto</h3>
-          <p class="text-white mb-5">Mahasiswa Teknologi Rekayasa Perangkat Lunak dengan minat di UI/UX, Front-End Development, dan desain grafis, serta fokus pada menciptakan antarmuka yang intuitif dan pengalaman pengguna yang optimal.</p>
-            <a href="dokument/CV HERU SUSANTO.pdf" download class="mt-6 inline-block bg-blue-800 text-white px-6 py-2 rounded-md hover:opacity-80">Download CV</a>
-        </div>
-      </div>
-    </section>
+    const menu = document.querySelector(".menu"); // Ambil elemen menu
+    const btn = document.querySelector(".hamburger-menu"); // Ambil tombol hamburger
+    const barsIcon = btn.querySelector(".fa-bars"); // Ambil ikon "bars" (tiga garis)
+    const closeIcon = btn.querySelector(".fa-xmark"); // Ambil ikon "xmark" (ikon silang)
 
-    <section>
-      <!-- about -->
-    <section id="about" class="w-11/12 md:container mx-auto px-28 py-28">
-      <div class="flex flex-col md:flex-row items-center md:items-start space-y-10 md:space-y-0 md:space-x-12">
-        <img src="img/IMG_1256 (1).png" class="w-30 h-96">
-        <div>
-          <h3 class="text-5xl font-bold mb-5">Tentang Saya</h3>
-          <p class="text-justify mb-5">Saya adalah Mahasiswa aktif Politeknik Negeri Banyuwangi, Semester 6, 
-            Jurusan Bisnis dan Informatika, Program Studi Teknologi Rekayasa Perangkat Lunak.Saya memiliki 
-            keahlian dalam UI/UX Design, Desain Grafis, dan Front-End Development. Dengan latar belakang ini, 
-            saya terbiasa merancang antarmuka yang intuitif, mengembangkan tampilan web yang responsif, 
-            serta memastikan pengalaman pengguna yang optimal. Saya juga memiliki ketertarikan dalam 
-            eksplorasi tren desain terbaru dan teknologi web untuk menciptakan solusi digital yang inovatif.</p>
-          <ul class="md:flex md:space-x-5">
-    </section>
+    btn.addEventListener("click", function () { // Saat tombol hamburger diklik
+      menu.classList.toggle("hidden"); // Tampilkan/sembunyikan menu
+      barsIcon.classList.toggle("hidden"); // Sembunyikan/tampilkan ikon bars
+      closeIcon.classList.toggle("hidden"); // Tampilkan/sembunyikan ikon xmark
+    });
+  });
+</script>
 
-    <section>
-    <!-- POROTOFOLIO -->
+
+<!-- hero -->
+<section class="bg-gray-800">
+  <div class="container mx-auto text-center text-white h-screen flex items-center">
+    <div class="mx-auto w-3/4 md:w-2/4">
+      <h3 class="text-6xl font-bold text-center mb-6">Hey, I'm <br> Heru Susanto</h3>
+      <p class="text-white mb-5">Mahasiswa Teknologi Rekayasa Perangkat Lunak dengan minat di UI/UX, Front-End
+        Development, dan desain grafis, serta fokus pada menciptakan antarmuka yang intuitif dan pengalaman pengguna
+        yang optimal.</p>
+      <a href="dokument/CV HERU SUSANTO.pdf" download
+        class="mt-6 inline-block bg-blue-800 text-white px-6 py-2 rounded-md hover:opacity-80">Download CV</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <!-- about -->
+  <section id="about" class="w-11/12 md:container mx-auto px-28 py-28">
+    <div class="flex flex-col md:flex-row items-center md:items-start space-y-10 md:space-y-0 md:space-x-12">
+      <img src="/image/img/IMG_1256 (1).png" class="w-30 h-96">
+      <div>
+        <h3 class="text-5xl font-bold mb-5">Tentang Saya</h3>
+        <p class="text-justify mb-5">Saya adalah Mahasiswa aktif Politeknik Negeri Banyuwangi, Semester 6,
+          Jurusan Bisnis dan Informatika, Program Studi Teknologi Rekayasa Perangkat Lunak.Saya memiliki
+          keahlian dalam UI/UX Design, Desain Grafis, dan Front-End Development. Dengan latar belakang ini,
+          saya terbiasa merancang antarmuka yang intuitif, mengembangkan tampilan web yang responsif,
+          serta memastikan pengalaman pengguna yang optimal. Saya juga memiliki ketertarikan dalam
+          eksplorasi tren desain terbaru dan teknologi web untuk menciptakan solusi digital yang inovatif.</p>
+        <ul class="md:flex md:space-x-5">
+  </section>
+
+  <section>
+    <!-- PORTOFOLIO -->
     <section id="portofolio" class="bg-gray-200 py-24">
       <div class="w-11/12 md:container mx-auto px-6">
         <h3 class="text-5xl font-bold text-center mb-3">Portofolio</h3>
         <p class="text-gray-500 text-center mb-6">Portofolio berikut adalah hasil dari desain </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <!-- POROTOFOLIO 1-->
+          <!-- PORTOFOLIO 1 -->
           <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
             <div>
               <h4 class="text-2xl text-center font-bold mb-4">Desain Logo</h4>
-              <p class="text-justify text-gray-500 mb-5">Desain Logo yang saya buat ini dirancang untuk mencerminkan identitas dan nilai utama yang ingin disampaikan. Dengan perpaduan elemen visual yang unik serta warna yang selaras, desain ini mengutamakan kesederhanaan namun tetap memiliki karakter yang kuat dan mudah dikenali.</p>
-              <a href="#modal-logo" class="text-blue-400 hover:text-gray-500">Click for more details</a>
+              <p class="text-justify text-gray-500 mb-5">Desain Logo yang saya buat ini dirancang untuk
+                mencerminkan identitas dan nilai utama yang ingin disampaikan.
+                Dengan perpaduan elemen visual yang unik serta warna yang selaras,
+                desain ini mengutamakan kesederhanaan namun tetap memiliki karakter
+                yang kuat dan mudah dikenali.</p>
+              <a href="#modal-logo" class="text-blue-400 hover:text-gray-500">Klik untuk lebih jelasnya</a>
             </div>
           </div>
-          <!-- Modal -->
+          <!-- Modal Galeri Logo -->
           <div id="modal-logo" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
             <div class="bg-white p-5 rounded-lg relative w-11/12 md:w-2/3">
               <h2 class="text-xl font-bold text-center mb-4">Galeri Desain Logo</h2>
               <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <img src="/image/LOGO C.jpg" alt="Desain 1" class="w-20 h-16">
-                <img src="/image/LOGO 1.jpg" alt="Desain 2" class="w-20 h-16">
-                <img src="/image/LOGO PANJAK PENARI SMK.png" alt="Desain 3" class="w-2O h-16">
-                <img src="/image/LOGO SI PIRANG.png" alt="Desain 4" class="w-2 h-16">
-                <img src="images/desain5.jpg" alt="Desain 5" class="w-28 h-16">
+                <img src="/image/LOGO SI PIRANG.png" alt="Desain 1"
+                  class="w-19 h-16 cursor-pointer mx-auto preview-img">
+                <img src="/image/LOGO KUE PUKIS.png" alt="Desain 2"
+                  class="w-19 h-16 cursor-pointer mx-auto preview-img">
+                <img src="/image/LOGO PANJAK PENARI SMK.png" alt="Desain 3"
+                  class="w-19 h-16 cursor-pointer mx-auto preview-img">
+                <img src="/image/LOGO PISANG BANABO.png" alt="Desain 4"
+                  class="w-19 h-16 cursor-pointer mx-auto preview-img">
+                <img src="/image/LOGO.jpg" alt="Desain 5" class="w-19 h-16 cursor-pointer mx-auto preview-img">
+                <img src="/image/LOGO_1.jpg" alt="Desain 6" class="w-19 h-16 cursor-pointer mx-auto preview-img">
+                <img src="/image/LOGO FORBIM.png" alt="Desain 7" class="w-19 h-16 cursor-pointer mx-auto preview-img">
+                <img src="/image/LOGO LOMBA FORBIM.png" alt="Desain 8"
+                  class="w-19 h-16 cursor-pointer mx-auto preview-img">
               </div>
-              <button onclick="document.getElementById('modal-logo').style.display='none'" class="absolute top-2 right-2 text-red-500">✖</button>
+              <button onclick="document.getElementById('modal-logo').style.display='none'"
+                class="absolute top-2 right-2 text-red-500 text-xl font-bold">✖</button>
             </div>
           </div>
-          <!-- JavaScript untuk Modal -->
-          <script>
-            document.querySelector('a[href="#modal-logo"]').addEventListener("click", function(event) {
-              event.preventDefault();
-            document.getElementById('modal-logo').style.display = "flex";
-          });
-        </script>
-          
-        <!-- POROTOFOLIO 2-->
-        <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-          <div>
-            <h4 class="text-2xl text-center font-bold mb-4">Desain Pamflet</h4>
-            <p class="text-justify text-gray-500 mb-5">Desain Logo yang saya buat ini dirancang untuk mencerminkan identitas dan nilai utama yang ingin disampaikan. Dengan perpaduan elemen visual yang unik serta warna yang selaras, desain ini mengutamakan kesederhanaan namun tetap memiliki karakter yang kuat dan mudah dikenali.</p>
-            <a href="#modal-logo2" class="text-blue-400 hover:text-gray-500">Click for more details</a>
-          </div>
-        </div>
-        <!-- Modal -->
-        <div id="modal-logo2" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
-          <div class="bg-white p-5 rounded-lg relative w-11/12 md:w-2/3">
-            <h2 class="text-xl font-bold text-center mb-4">Galeri Desain Pamflet</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <img src="images/desain1.jpg" alt="Desain 1" class="w-full rounded-lg">
-              <img src="images/desain2.jpg" alt="Desain 2" class="w-full rounded-lg">
-              <img src="images/desain3.jpg" alt="Desain 3" class="w-full rounded-lg">
-              <img src="images/desain4.jpg" alt="Desain 4" class="w-full rounded-lg">
-              <img src="images/desain5.jpg" alt="Desain 5" class="w-full rounded-lg">
+          <!-- Modal Preview Gambar -->
+          <div id="image-preview-modal"
+            class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50">
+            <div class="relative bg-white rounded p-2 max-w-[90%] max-h-[80%]">
+              <img id="preview-image" src="" alt="Preview" class="max-w-full max-h-[70vh] object-contain mx-auto">
+              <button id="close-preview" class="absolute top-1 right-2 text-red-600 text-xl font-bold">✖</button>
             </div>
-            <button onclick="document.getElementById('modal-logo2').style.display='none'" class="absolute top-2 right-2 text-red-500">✖</button>
           </div>
-        </div>
-        <!-- JavaScript untuk Modal -->
-        <script>
-          document.querySelector('a[href="#modal-logo2"]').addEventListener("click", function(event) {
-            event.preventDefault();
-          document.getElementById('modal-logo2').style.display = "flex";
-        });
-      </script>
 
-        <!-- POROTOFOLIO 3-->
-        <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-          <div>
-            <h4 class="text-2xl text-center font-bold mb-4">Desain Pamflet</h4>
-            <p class="text-justify text-gray-500 mb-5">Desain Logo yang saya buat ini dirancang untuk mencerminkan identitas dan nilai utama yang ingin disampaikan. Dengan perpaduan elemen visual yang unik serta warna yang selaras, desain ini mengutamakan kesederhanaan namun tetap memiliki karakter yang kuat dan mudah dikenali.</p>
-            <a href="#modal-logo3" class="text-blue-400 hover:text-gray-500">Click for more details</a>
-          </div>
-        </div>
-        <!-- Modal -->
-        <div id="modal-logo3" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
-          <div class="bg-white p-5 rounded-lg relative w-11/12 md:w-2/3">
-            <h2 class="text-xl font-bold text-center mb-4">Galeri Desain Pamflet</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <img src="images/desain1.jpg" alt="Desain 1" class="w-full rounded-lg">
-              <img src="images/desain2.jpg" alt="Desain 2" class="w-full rounded-lg">
-              <img src="images/desain3.jpg" alt="Desain 3" class="w-full rounded-lg">
-              <img src="images/desain4.jpg" alt="Desain 4" class="w-full rounded-lg">
-              <img src="images/desain5.jpg" alt="Desain 5" class="w-full rounded-lg">
-            </div>
-            <button onclick="document.getElementById('modal-logo3').style.display='none'" class="absolute top-2 right-2 text-red-500">✖</button>
-          </div>
-        </div>
-        <!-- JavaScript untuk Modal -->
-        <script>
-          document.querySelector('a[href="#modal-logo3"]').addEventListener("click", function(event) {
-            event.preventDefault();
-            document.getElementById('modal-logo3').style.display = "flex";
-          });
-        </script>
 
-      <!-- POROTOFOLIO 4-->
-      <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-        <div>
-          <h4 class="text-2xl text-center font-bold mb-4">Desain Banner</h4>
-          <p class="text-justify text-gray-500 mb-5">Desain Logo yang saya buat ini dirancang untuk mencerminkan identitas dan nilai utama yang ingin disampaikan. Dengan perpaduan elemen visual yang unik serta warna yang selaras, desain ini mengutamakan kesederhanaan namun tetap memiliki karakter yang kuat dan mudah dikenali.</p>
-          <a href="#modal-logo4" class="text-blue-400 hover:text-gray-500">Click for more details</a>
-        </div>
-      </div>
-      <!-- Modal -->
-      <div id="modal-logo4" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
-        <div class="bg-white p-5 rounded-lg relative w-11/12 md:w-2/3">
-          <h2 class="text-xl font-bold text-center mb-4">Galeri Desain Banner</h2>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <img src="images/desain1.jpg" alt="Desain 1" class="w-full rounded-lg">
-            <img src="images/desain2.jpg" alt="Desain 2" class="w-full rounded-lg">
-            <img src="images/desain3.jpg" alt="Desain 3" class="w-full rounded-lg">
-            <img src="images/desain4.jpg" alt="Desain 4" class="w-full rounded-lg">
-            <img src="images/desain5.jpg" alt="Desain 5" class="w-full rounded-lg">
+          <!-- PORTOFOLIO 2 -->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <div>
+              <h4 class="text-2xl text-center font-bold mb-4">Desain Poster</h4>
+              <p class="text-justify text-gray-500 mb-5">
+                Dengan sentuhan visual yang khas dan warna yang selaras, poster ini tidak hanya menyampaikan pesan,
+                tetapi juga membangun identitas yang kuat.
+                Desain yang sederhana namun berkarakter membuatnya mudah dikenang siapa pun yang melihatnya.
+              </p>
+              <a href="#modal-poster" class="mt-10 block text-blue-400 hover:text-gray-500">Klik untuk lebih
+                jelasnya</a>
+            </div>
           </div>
-          <button onclick="document.getElementById('modal-logo4').style.display='none'" class="absolute top-2 right-2 text-red-500">✖</button>
-        </div>
-      </div>
-      <script>
-        document.querySelector('a[href="#modal-logo4"]').addEventListener("click", function(event) {
-          event.preventDefault();
-          document.getElementById('modal-logo4').style.display = "flex";
-        });
-      </script>
+          <!-- Modal Poster -->
+          <div id="modal-poster"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-40">
+            <div class="bg-white p-5 rounded-lg relative w-11/12 md:w-2/3">
+              <h2 class="text-xl font-bold text-center mb-4">Galeri Desain Poster</h2>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="image/POSTER KOPI.png" alt="Desain 1" class="poster-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="image/POSTER KEMERDEKAAN.png" alt="Desain 2"
+                  class="poster-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="image/POSTER MAKANAN.png" alt="Desain 3" class="poster-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="image/POSTER KEMERDEKAAN 2.png" alt="Desain 4"
+                  class="poster-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="image/ROBEK.png" alt="Desain 5" class="poster-img w-19 h-16 cursor-pointer mx-auto">
+              </div>
+              <button onclick="document.getElementById('modal-poster').style.display='none'"
+                class="absolute top-2 right-2 text-red-500 text-xl font-bold">✖</button>
+            </div>
+          </div>
+          <!-- Modal Preview Poster -->
+          <div id="preview-poster-modal"
+            class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50">
+            <div class="relative bg-white rounded p-2 max-w-[90%] max-h-[80%]">
+              <img id="preview-poster-img" src="" alt="Preview Poster"
+                class="max-w-full max-h-[70vh] object-contain mx-auto">
+              <button id="close-preview-poster" class="absolute top-1 right-2 text-red-600 text-xl font-bold">✖</button>
+            </div>
+          </div>
+
+
+          <!-- PORTOFOLIO 3 -->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <div>
+              <h4 class="text-2xl text-center font-bold mb-4">Desain Pamflet</h4>
+              <p class="text-justify text-gray-500 mb-5">
+                Desain pamflet ini dibuat untuk menggambarkan identitas serta nilai-nilai penting yang ingin
+                disampaikan.
+                Dengan mengombinasikan elemen visual yang khas dan warna yang harmonis,
+                pamflet ini mengedepankan kesederhanaan sekaligus memiliki ciri khas yang kuat dan mudah diingat.
+              </p>
+              <a href="#modal-pamflet" class="text-blue-400 hover:text-gray-500"
+                onclick="document.getElementById('modal-pamflet').style.display='flex'">Klik untuk lebih jelasnya</a>
+            </div>
+          </div>
+          <!-- Modal Pamflet -->
+          <div id="modal-pamflet"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-40">
+            <div class="bg-white p-5 rounded-lg relative w-11/12 md:w-2/3 max-h-[90vh] overflow-y-auto">
+              <h2 class="text-xl font-bold text-center mb-4">Galeri Desain Pamflet</h2>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="/image/SHOLAWAT.png" alt="Desain 1" class="pamflet-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="/image/GBF.png" alt="Desain 2" class="pamflet-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="/image/PENSI.png" alt="Desain 3" class="pamflet-img w-19 h-16 cursor-pointer mx-auto">
+              </div>
+              <button onclick="document.getElementById('modal-pamflet').style.display='none'"
+                class="absolute top-2 right-2 text-red-500 text-xl font-bold">✖</button>
+            </div>
+          </div>
+          <!-- Modal Preview Pamflet -->
+          <div id="preview-pamflet-modal"
+            class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50">
+            <div class="relative bg-white rounded p-2 max-w-[90%] max-h-[80%]">
+              <img id="preview-pamflet-img" src="" alt="Preview Pamflet"
+                class="max-w-full max-h-[70vh] object-contain mx-auto">
+              <button id="close-preview-pamflet"
+                class="absolute top-1 right-2 text-red-600 text-xl font-bold">✖</button>
+            </div>
+          </div>
+
+
+          <!-- PORTOFOLIO 4 -->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <div>
+              <h4 class="text-2xl text-center font-bold mb-4">Desain Media Digital</h4>
+              <p class="text-justify text-gray-500 mb-5">
+                Desain konten Instagram ini dirancang untuk merepresentasikan karakter dan pesan utama yang ingin
+                disampaikan.
+                Perpaduan warna yang selaras dengan elemen visual yang unik memberikan kesan sederhana namun tetap
+                berkarakter dan mudah dikenali.
+              </p>
+              <a href="#modal-logo4" class="mt-10 block text-blue-400 hover:text-gray-500"
+                onclick="document.getElementById('modal-logo4').style.display='flex'">Klik untuk lebih jelasnya</a>
+            </div>
+          </div>
+          <!-- Modal Logo4 -->
+          <div id="modal-logo4"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-40">
+            <div class="bg-white p-5 rounded-lg relative w-11/12 md:w-2/3 max-h-[90vh] overflow-y-auto">
+              <h2 class="text-xl font-bold text-center mb-4">Galeri Desain Media Digital</h2>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="/image/HARI BATIK.png" alt="Desain 1" class="pamflet-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="image/HARI PENDIDIKAN INTERNASIONAL.png" alt="Desain 2"
+                  class="pamflet-img w-19 h-16 cursor-pointer mx-auto">
+                <img src="image/DESAIN PERUSAHAAN 0.png" alt="Desain 3"
+                  class="pamflet-img w-19 h-16 cursor-pointer mx-auto">
+              </div>
+              <button onclick="document.getElementById('modal-logo4').style.display='none'"
+                class="absolute top-2 right-2 text-red-500 text-xl font-bold">✖</button>
+            </div>
+          </div>
+          <!-- Modal Preview Logo4 -->
+          <div id="preview-logo4-modal"
+            class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50">
+            <div class="relative bg-white rounded p-2 max-w-[90%] max-h-[90%]">
+              <img id="preview-logo4-img" src="" alt="Preview Poster"
+                class="max-w-full max-h-[80vh] object-contain mx-auto">
+              <button id="close-preview-logo4-btn"
+                class="absolute top-1 right-2 text-red-600 text-xl font-bold">✖</button>
+            </div>
+          </div>
     </section>
- 
+
     <!-- SERTIFIKAT -->
     <section id="sertifikat" class="py-24 px-7 bg-white">
       <h3 class="text-5xl font-bold text-center mb-2">Sertifikat</h3>
@@ -237,81 +291,91 @@
       <div class="grid grid-cols-2 md:grid-cols-4 w-11/12 md:container mx-auto gap-6">
         <!-- SERTIFIKAT 1-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/Sertifikat Jaran Goyang_page-0017.jpg')">
-            <img src="./img/Sertifikat Jaran Goyang_page-0017.jpg" class="w-full cursor-pointer" />
+          <a onclick="openModal('./image/img/Sertifikat Jaran Goyang_page-0017.jpg')">
+            <img src="./image/img/Sertifikat Jaran Goyang_page-0017.jpg" class="w-full cursor-pointer" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT HUMAS EKSTERNAL</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada saya atas peran saya sebagai Humas Eksternal dalam perlombaan tari Jaran Goyang Aji Kembang yang diselenggarakan oleh UKM GENIWANGI, Politeknik Negeri Banyuwangi, pada 10 Agustus 2023.</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada saya atas peran saya
+                sebagai Humas Eksternal dalam perlombaan tari Jaran Goyang Aji Kembang yang diselenggarakan oleh UKM
+                GENIWANGI, Politeknik Negeri Banyuwangi, pada 10 Agustus 2023.</p>
             </div>
           </a>
         </div>
         <!-- SERTIFIKAT 2-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/4.png')">
-            <img src="./img/4.png" class="w-full" />
+          <a onclick="openModal('./image/img/4.png')">
+            <img src="./image/img/4.png" class="w-full" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT PENGHARGAAN</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Peserta pada acara Webinar Animasi, Politeknik Negeri Banyuwangi 3 Juni 2023.</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Peserta
+                pada acara Webinar Animasi, Politeknik Negeri Banyuwangi 3 Juni 2023.</p>
             </div>
           </a>
         </div>
         <!-- SERTIFIKAT 3-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/Sertifikat Juara 3 lomba desain_1.jpg')">
-            <img src="./img/Sertifikat Juara 3 lomba desain_1.jpg" class="w-full" />
+          <a onclick="openModal('./image/img/Sertifikat Juara 3 lomba desain_1.jpg')">
+            <img src="./image/img/Sertifikat Juara 3 lomba desain_1.jpg" class="w-full" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT LOMBA DESAIN LOGO</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Juara 3 dalam lomba desain logo diesnatalis ke-8 Forbimwangi, Politeknik Negeri Banyuwangi 10 april 2023.</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Juara 3
+                dalam lomba desain logo diesnatalis ke-8 Forbimwangi, Politeknik Negeri Banyuwangi 10 april 2023.</p>
             </div>
           </a>
         </div>
         <!-- SERTIFIKAT 4-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/Sertifikat Juara 3 lomba desain_2.jpg')">
-            <img src="./img/Sertifikat Juara 3 lomba desain_2.jpg" class="w-full" />
+          <a onclick="openModal('./image/img/Sertifikat Juara 3 lomba desain_2.jpg')">
+            <img src="./image/img/Sertifikat Juara 3 lomba desain_2.jpg" class="w-full" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT LOMBA DESAIN LOGO</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Juara 2 dalam lomba desain logo diesnatalis ke-9 Forbimwangi, Politeknik Negeri Banyuwangi 30 Maret 2023.</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Juara 2
+                dalam lomba desain logo diesnatalis ke-9 Forbimwangi, Politeknik Negeri Banyuwangi 30 Maret 2023.</p>
             </div>
           </a>
         </div>
         <!-- SERTIFIKAT 5-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/Sertifikat Direkturcup_page-0003.jpg')">
-            <img src="./img/Sertifikat Direkturcup_page-0003.jpg" class="w-full" />
+          <a onclick="openModal('./image/img/Sertifikat Direkturcup_page-0003.jpg')">
+            <img src="./image/img/Sertifikat Direkturcup_page-0003.jpg" class="w-full" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT PENGHARGAAN</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Kordinator Lomba Fotografi dalam acara DIREKTUR CUP 2023, Politeknik Negeri Banyuwangi 10 april 2023.</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai Kordinator
+                Lomba Fotografi dalam acara DIREKTUR CUP 2023, Politeknik Negeri Banyuwangi 10 april 2023.</p>
             </div>
           </a>
         </div>
         <!-- SERTIFIKAT 6-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/Sertif Festival Barong.jpg')">
-            <img src="./img/Sertif Festival Barong.jpg" class="w-full" />
+          <a onclick="openModal('./image/img/Sertif Festival Barong.jpg')">
+            <img src="./image/img/Sertif Festival Barong.jpg" class="w-full" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT APRESIASI</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai panitia banyuwangi Festival yaitu Grand Festival Barong 2024, Banyuwangi 22 September 2024</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai panitia
+                banyuwangi Festival yaitu Grand Festival Barong 2024, Banyuwangi 22 September 2024</p>
             </div>
           </a>
         </div>
         <!-- SERTIFIKAT 7-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/KONTEN KREATOR.jpeg')">
-            <img src="./img/KONTEN KREATOR.jpeg" class="w-full" />
+          <a onclick="openModal('./image/img/KONTEN KREATOR.jpeg')">
+            <img src="./image/img/KONTEN KREATOR.jpeg" class="w-full" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT LOMBA KONTEN KREATOR</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai juara 2 lomba konten kreator yang di selenggaran oleh TPHT politeknik Negeri Banyuwangi pada 24 November 2021.</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai juara 2
+                lomba konten kreator yang di selenggaran oleh TPHT politeknik Negeri Banyuwangi pada 24 November 2021.
+              </p>
             </div>
           </a>
         </div>
         <!-- SERTIFIKAT 8-->
         <div class="shadow-xl">
-          <a onclick="openModal('./img/Sertif Kordinator Kominfo.jpg')">
-            <img src="./img/Sertif Kordinator Kominfo.jpg" class="w-full" />
+          <a onclick="openModal('./image/img/Sertif Kordinator Kominfo.jpg')">
+            <img src="./image/img/Sertif Kordinator Kominfo.jpg" class="w-full" />
             <div class="py-3 px-5">
               <h4 class="text-center mb-2 font-bold">SERTIFIKAT KOOR KOMINFO</h4>
-              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai koordinator Kominfo UKM GENIWANGI Periode 2023/2024.</p>
+              <p class="text-gray-500 text-xs text-center mb-2">Sertifikat ini diberikan kepada Saya sebagai koordinator
+                Kominfo UKM GENIWANGI Periode 2023/2024.</p>
             </div>
           </a>
         </div>
@@ -321,7 +385,8 @@
     <!-- Modal -->
     <div id="modal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex justify-center items-center z-50">
       <div class="relative bg-white p-4 rounded-lg shadow-lg max-w-3xl w-full">
-        <button onclick="closeModal()" class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full">&times;</button>
+        <button onclick="closeModal()"
+          class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full">&times;</button>
         <img id="modal-img" src="" class="w-full h-auto rounded-lg" />
       </div>
     </div>
@@ -337,29 +402,35 @@
         document.getElementById("modal").classList.add("hidden");
       }
     </script>
-    
+
     <footer class="py-5 bg-gray-900 text-white">
       <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         <p class="text-center md:text-left">&copy; 2025 Heru Susanto. All rights reserved.</p>
         <div class="flex space-x-4">
-          <a href="https://www.tiktok.com/@herususanto_31?_t=ZS-8ukQ32hDtlE&_r=1" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+          <a href="https://www.tiktok.com/@herususanto_31?_t=ZS-8ukQ32hDtlE&_r=1" target="_blank"
+            class="text-gray-400 hover:text-white hover:scale-110 transition transform">
             <i class="fa-brands fa-tiktok text-xl"></i>
           </a>
-          <a href= "https://www.instagram.com/heru.ssnto" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+          <a href="https://www.instagram.com/heru.ssnto" target="_blank"
+            class="text-gray-400 hover:text-white hover:scale-110 transition transform">
             <i class="fa-brands fa-instagram text-xl"></i>
           </a>
-          <a href="https://www.linkedin.com/in/heru-susanto-67744b2a5/" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+          <a href="https://www.linkedin.com/in/heru-susanto-67744b2a5/" target="_blank"
+            class="text-gray-400 hover:text-white hover:scale-110 transition transform">
             <i class="fa-brands fa-linkedin text-xl"></i>
           </a>
-          <a href="https://github.com/Herususanto31" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+          <a href="https://github.com/Herususanto31" target="_blank"
+            class="text-gray-400 hover:text-white hover:scale-110 transition transform">
             <i class="fa-brands fa-github text-xl"></i>
           </a>
-          <a href="https://youtube.com/@herususanto0318?si=s0Os12fmPMCQNTre" target="_blank" class="text-gray-400 hover:text-white hover:scale-110 transition transform">
+          <a href="https://youtube.com/@herususanto0318?si=s0Os12fmPMCQNTre" target="_blank"
+            class="text-gray-400 hover:text-white hover:scale-110 transition transform">
             <i class="fa-brands fa-youtube text-xl"></i>
           </a>
         </div>
       </div>
     </footer>
     <script src="script.js"></script>
-  </body>
-</html>
+    </body>
+
+    </html>

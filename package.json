@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-website",
+  "version": "1.0.0",
+  "description": "(Update tampilan)\r Website dengan tampilan sederhana dengan menggunakan:\r - HTML\r - Tailwindcss\r - Javascript.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herususanto31/Tailwind-Portofolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Herususanto31/Tailwind-Portofolio/issues"
+  },
+  "homepage": "https://github.com/Herususanto31/Tailwind-Portofolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
+  }
+}
