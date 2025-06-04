@@ -15,6 +15,7 @@ const iconBars = document.querySelector('.fa-bars');
 // Ambil elemen ikon close (menu tertutup)
 const iconClose = document.querySelector('.fa-xmark');
 
+
 // Fungsi untuk toggle menu tampil atau sembunyi
 function displayMenu() {
     if (menu.classList.contains('absolute')) { // Jika menu sedang terbuka (ditandai dengan kelas 'absolute')
@@ -184,33 +185,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
-  // === MODAL SERTIFIKAT ===
-  // Ambil semua gambar sertifikat
-  const sertifikatImages = document.querySelectorAll(".sertifikat-img");
-  // Ambil modal sertifikat dan gambar modal sertifikat
-  const sertifikatModal = document.querySelector("#modal");
-  const sertifikatModalImg = document.querySelector("#modal-img");
-  // Ambil tombol close modal sertifikat
-  const closeModal = document.querySelector("#close-modal");
-
-  // Pasang event klik pada setiap gambar sertifikat untuk membuka modal sertifikat
-  sertifikatImages.forEach((img) => {
-    img.addEventListener("click", function () {
-      sertifikatModal.classList.remove("hidden"); // Tampilkan modal sertifikat
-      sertifikatModalImg.src = this.src; // Set src gambar modal sertifikat sesuai gambar yang diklik
-    });
-  });
-
-  // Pasang event klik tombol close modal sertifikat
-  closeModal.addEventListener("click", function () {
-    sertifikatModal.classList.add("hidden"); // Sembunyikan modal sertifikat
-  });
-
-  // Jika klik di background modal sertifikat, tutup modal
-  sertifikatModal.addEventListener("click", function (event) {
-    if (event.target === sertifikatModal) {
-      sertifikatModal.classList.add("hidden");
-    }
-  });
 });

@@ -22,43 +22,39 @@
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="bg-gray-900 sticky top-0 w-full z-50">
+    <nav class="w-11/12 md:container mx-auto py-4 flex justify-between items-center text-white">
+      <!-- Logo -->
+      <a href="#" class="text-3xl font-bold px-6">Portofolio</a>
 
+      <!-- Menu Navigasi -->
+      <ul
+        class="menu hidden absolute top-16 left-0 w-full bg-gray-900 md:flex md:static md:w-auto md:bg-transparent md:flex-row z-50">
+        <li class="px-7 py-3 hover:text-gray-500">
+          <a href="#about">About</a>
+        </li>
+        <li class="px-7 py-3 hover:text-gray-500">
+          <a href="#portofolio">Portofolio</a>
+        </li>
+        <li class="px-7 py-3 hover:text-gray-500">
+          <a href="#sertifikat">Sertifikat</a>
+        </li>
+        <li class="px-7 py-3 md:hover:text-white">
+          <a href="#"
+            class="md:border-2 md:border-blue-400 md:py-2 md:px-5 md:rounded-xl md:hover:bg-blue-300 text-white">
+            Beranda
+          </a>
+        </li>
+      </ul>
+
+      <!-- Tombol Menu Mobile -->
+      <button class="hamburger-menu text-2xl md:hidden">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark hidden"></i>
+      </button>
+  </header>
 </body>
-
-</html>
-
-<!-- Header -->
-<header class="bg-gray-900 sticky top-0 w-full z-50">
-  <nav class="w-11/12 md:container mx-auto py-4 flex justify-between items-center text-white">
-    <!-- Logo -->
-    <a href="#" class="text-3xl font-bold px-6">Portofolio</a>
-
-    <!-- Menu Navigasi -->
-    <ul
-      class="menu hidden absolute top-16 left-0 w-full bg-gray-900 md:flex md:static md:w-auto md:bg-transparent md:flex-row z-50">
-      <li class="px-7 py-3 hover:text-gray-500">
-        <a href="#about">About</a>
-      </li>
-      <li class="px-7 py-3 hover:text-gray-500">
-        <a href="#portofolio">Portofolio</a>
-      </li>
-      <li class="px-7 py-3 hover:text-gray-500">
-        <a href="#sertifikat">Sertifikat</a>
-      </li>
-      <li class="px-7 py-3 md:hover:text-white">
-        <a href="#"
-          class="md:border-2 md:border-blue-400 md:py-2 md:px-5 md:rounded-xl md:hover:bg-blue-300 text-white">
-          Beranda
-        </a>
-      </li>
-    </ul>
-
-    <!-- Tombol Menu Mobile -->
-    <button class="hamburger-menu text-2xl md:hidden">
-      <i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-xmark hidden"></i>
-    </button>
-</header>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () { // Menunggu seluruh isi halaman dimuat
@@ -433,4 +429,4 @@
     <script src="script.js"></script>
     </body>
 
-    </html>
+</html>
